@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 - 코드상으로 버튼을 만들 수 도 있으며 다른 원하는 기능을 세팅할 수 있음. 
 
 
-### 좌표값을 세팅하는 코드
+### 좌표값을 세팅
 ```Java
 //부모 레이아웃을 가져와서 원래 클래스로 캐스팅
             LinearLayout parent = (LinearLayout) original.getParent();
