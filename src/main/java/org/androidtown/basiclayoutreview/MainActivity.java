@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {// onclick리스너 메서드 인자로 받는다는 의미 임! view인자로!
         //클릭된 버튼을 사용하기 위해 시스템에서 넘겨받은 뷰를
         //원래의 버튼으로 캐스팅해준다.
-        if (view instanceof Button) {//view 변수가 Button 클래스의 인스턴스 인지를 체크, 온클릭 리스너에서 전달받은 뷰가 버튼하고 같다면
+        if (view instanceof Button) {
+            //view 변수가 Button 클래스의 인스턴스 인지를 체크, 온클릭 리스너에서 전달받은 뷰가 버튼하고 같다면
             Button original = (Button) view;  // original이라는 변수에 버튼으로 형변환한 것을 담음.
 
 
@@ -95,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 @Override
                 public void onAnimationEnd(Animator animation) {
+
                     stage.removeView(dummy);
                 }
 
